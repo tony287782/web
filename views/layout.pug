@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    script(src='https://cdn.plot.ly/plotly-1.58.4.min.js')
+    title= title
+    link(rel='stylesheet',href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js")
+
+    style(type='text/css').
+      .introduction{
+       padding: 0px 0px 50px 50px;
+      }
+  body
+    
+   div.inside.ts.inverted.segment(style='margin=0;padding=0')           
+      div(style='display:inline;').ts.inverted.massive.header ICMEMS&nbsp&nbsp
+      div(style='display:inline;').ts.separated.buttons 
+        a(href='/').botton.ts.primary.button Home
+        a(href='/sensorlist').botton.ts.button Sensor
+        a(href='/control').button.ts.info.button Control
+  block content
